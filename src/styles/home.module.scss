@@ -5,9 +5,14 @@
   font-family: 'Roboto';
 }
 
+.backgroundImage {
+  background: url('/images/background.svg') no-repeat left bottom;
+  background-size: contain;
+}
+
 .authorContainer {
   display: flex;
-  height: 500px;
+  height: 55vh;
   align-items: center;
   justify-content: center;
 
@@ -27,5 +32,14 @@
 
   button {
     float: right;
+  }
+}
+
+.socialMidiaContainer {
+  display: flex;
+  flex-direction: column;
+  a {
+    padding: 5px;
+    width: min-content;
   }
 }

@@ -2,9 +2,13 @@ import styles from './styles.module.scss';
 
 interface IProps {
   title: string;
-  //   props: React.HTMLProps<HTMLButtonElement>;
+  onClick: () => void;
 }
 
-export function Button({ title }: IProps) {
-  return <button className={styles.button}>{title}</button>;
+export function Button({ title, onClick }: IProps) {
+  return (
+    <button onClick={onClick} className={styles.button}>
+      {title}
+    </button>
+  );
 }
