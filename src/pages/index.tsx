@@ -233,9 +233,23 @@ export default function Home() {
         </Flex>
       </Flex>
       {/* Page Projects */}
-      <CarouselSlide>
-        <Text>Oiii</Text>
-      </CarouselSlide>
+      <Flex
+        id="projects"
+        dir="column"
+        flexDir="column"
+        w={'98vw'}
+        h="100vh"
+        justify="center"
+        align={'center'}
+      >
+        <Box alignItems={'center'}>
+          <Title name="Projects" />
+        </Box>
+        <Box maxW={750} alignItems={'center'}>
+          <CarouselSlide />
+        </Box>
+      </Flex>
+      {/* Page Blog */}
     </>
   );
 }
