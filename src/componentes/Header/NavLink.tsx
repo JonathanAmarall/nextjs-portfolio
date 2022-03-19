@@ -10,6 +10,7 @@ import {
   MenuList,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 import { BsToggle2On } from 'react-icons/bs';
 import { RiMenuLine } from 'react-icons/ri';
 import { Link as LinkScroll } from 'react-scroll';
@@ -20,6 +21,7 @@ export function NavLink() {
     base: false,
     lg: true,
   });
+  const router = useRouter();
 
   return (
     <Box m={1}>
@@ -55,16 +57,7 @@ export function NavLink() {
           >
             Projects
           </LinkScroll>
-          <LinkScroll
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            to="blog"
-          >
-            Blog
-          </LinkScroll>
+          <Link onClick={() => router.push('/blog')}>Blog</Link>
           <Icon as={BsToggle2On} fontSize="30" />
         </HStack>
       ) : (

@@ -32,7 +32,7 @@ export default function Home() {
         <title>Jon</title>
       </Head>
       <Header />
-      <ScrollToTop smooth color="#6f00ff" />
+      <ScrollToTop smooth color="var(--primary)" />
       {/* Page Home */}
       <div className={styles.backgroundImage}>
         <div className={styles.authorContainer}>
@@ -76,13 +76,13 @@ export default function Home() {
       </div>
       {/* Page Skills */}
       <Box
-        id="skills"
         display={'flex'}
         alignItems="center"
         justifyContent={'center'}
         height="800px"
       >
         <Box
+          id="skills"
           display={'flex'}
           flexDir="column"
           alignItems="center"
@@ -195,7 +195,6 @@ export default function Home() {
       </Box>
       {/* Page Contact */}
       <Flex
-        id="contact"
         dir="column"
         flexDir="column"
         w={'98vw'}
@@ -204,7 +203,7 @@ export default function Home() {
         align={'center'}
         className={styles.backgroundImageInverse}
       >
-        <Box alignItems={'center'}>
+        <Box id="contact" alignItems={'center'}>
           <Title name="Contact" />
         </Box>
         <Flex
