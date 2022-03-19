@@ -2,12 +2,15 @@ import { extendTheme } from '@chakra-ui/react';
 
 export const darkTheme = extendTheme({
   components: {
+    Menu: {
+      bg: 'gray.800',
+    },
     Modal: {
       baseStyle: (props) => ({
         dialog: {
           maxWidth: ['50%', '50%', '50%'],
           minWidth: '50%',
-          height: '300',
+          height: '50%',
           bg: 'gray.800',
         },
       }),
