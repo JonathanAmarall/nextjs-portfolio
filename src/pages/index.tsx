@@ -22,6 +22,7 @@ import {
 } from '@chakra-ui/react';
 import { Title } from '../componentes/Title';
 import CarouselSlide from '../componentes/CarouselSlide';
+import ScrollToTop from 'react-scroll-to-top';
 
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -31,6 +32,7 @@ export default function Home() {
         <title>Jon</title>
       </Head>
       <Header />
+      <ScrollToTop smooth color="#6f00ff" />
       {/* Page Home */}
       <div className={styles.backgroundImage}>
         <div className={styles.authorContainer}>
