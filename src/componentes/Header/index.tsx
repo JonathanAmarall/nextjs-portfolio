@@ -1,5 +1,5 @@
 import { Flex } from '@chakra-ui/react';
-import { Logo } from './Logo';
+import { Logo } from '../Logo/Logo';
 import { NavLink } from './NavLink';
 
 export function Header() {
