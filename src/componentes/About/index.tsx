@@ -19,7 +19,7 @@ export function About() {
     <>
       <Flex
         width={'100%'}
-        h="100vh"
+        h={'100vh'}
         direction={{ base: 'column', md: 'row-reverse' }}
       >
         <Flex width={'100%'} justifyContent={'center'}>

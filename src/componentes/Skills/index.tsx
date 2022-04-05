@@ -17,9 +17,14 @@ export function Skills() {
         justifyContent={'center'}
       >
         <Title name={'Skills'} />
-        <Box display={'flex'} alignItems="center" justifyContent={'center'}>
+        <Box
+          display={'flex'}
+          alignItems="center"
+          justifyContent={'center'}
+          w={'100%'}
+        >
           <svg
-            width="855"
+            width="90%"
             height="288"
             viewBox="0 0 855 288"
             fill="none"

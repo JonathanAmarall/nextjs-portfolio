@@ -63,25 +63,27 @@ export function NavLink() {
         </HStack>
       ) : (
         <>
-          <Menu>
-            <MenuButton
-              _hover={{
-                color: 'white',
-                bg: 'purple',
-              }}
-              as={IconButton}
-              aria-label="Options"
-              icon={<RiMenuLine size={30} />}
-              variant="outline"
-              border={'none'}
-            />
-            <MenuList bg={'gray.900'} color={'white'}>
-              <MenuItem>Skills</MenuItem>
-              <MenuItem>Contact</MenuItem>
-              <MenuItem>Projects</MenuItem>
-              <MenuItem>Blog</MenuItem>
-            </MenuList>
-          </Menu>
+          <Box>
+            <Menu>
+              <MenuButton
+                _hover={{
+                  color: 'white',
+                  bg: 'purple',
+                }}
+                as={IconButton}
+                aria-label="Options"
+                icon={<RiMenuLine size={30} />}
+                variant="outline"
+                border={'none'}
+              />
+              <MenuList bg={'gray.900'} color={'white'}>
+                <MenuItem>Skills</MenuItem>
+                <MenuItem>Contact</MenuItem>
+                <MenuItem>Projects</MenuItem>
+                <MenuItem>Blog</MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
         </>
       )}
     </Box>

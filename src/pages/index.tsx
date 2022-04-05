@@ -18,6 +18,8 @@ import CarouselSlide from '../componentes/CarouselSlide';
 import ScrollToTop from 'react-scroll-to-top';
 import { About } from '../componentes/About';
 import { Contact } from '../componentes/Contact';
+import { Projects } from '../componentes/Projects';
+import { Skills } from '../componentes/Skills';
 
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,29 +29,11 @@ export default function Home() {
         <title>Jon</title>
       </Head>
       <Header />
-      <ScrollToTop smooth color="var(--primary)" />
+      <ScrollToTop smooth color="purple" />
       <About />
-      {/* Page Skills */}
-
+      <Skills />
       <Contact />
-      {/* Page Projects */}
-      <Flex
-        id="projects"
-        dir="column"
-        flexDir="column"
-        w={'98vw'}
-        h="100vh"
-        justify="center"
-        align={'center'}
-      >
-        <Box alignItems={'center'}>
-          <Title name="Projects" />
-        </Box>
-        <Box maxW={750} alignItems={'center'}>
-          <CarouselSlide />
-        </Box>
-      </Flex>
-      {/* Page Blog */}
+      <Projects />
     </>
   );
 }

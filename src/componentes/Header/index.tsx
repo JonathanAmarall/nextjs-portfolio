@@ -9,13 +9,11 @@ export function Header() {
       mx="auto"
       align={'center'}
       justifyContent="space-between"
-      style={{
-        position: 'sticky',
-        top: 0,
-        backgroundColor: 'var(--secondary)',
-        width: '100%',
-        borderBottom: '1px solid var(--gray-700)',
-      }}
+      bg={'gray.800'}
+      borderBottom={'1px solid gray.500'}
+      zIndex={1}
+      position={'sticky'}
+      top={0}
     >
       <Logo />
       <NavLink />

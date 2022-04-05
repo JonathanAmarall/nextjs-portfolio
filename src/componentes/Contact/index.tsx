@@ -19,6 +19,7 @@ export function Contact() {
       h="700px"
       justify="center"
       align={'center'}
+      background="url('/images/background-inverse.svg') no-repeat right bottom"
     >
       <Box id="contact" alignItems={'center'}>
         <Title name="Contact" />
