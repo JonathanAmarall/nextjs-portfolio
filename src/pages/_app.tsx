@@ -5,7 +5,7 @@ import { darkTheme } from '../styles/theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider resetCSS={false} theme={darkTheme}>
+    <ChakraProvider resetCSS={true} theme={darkTheme}>
       <Component {...pageProps} />
     </ChakraProvider>
   );

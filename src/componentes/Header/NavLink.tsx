@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   HStack,
   Icon,
   IconButton,
@@ -61,20 +62,27 @@ export function NavLink() {
           <Icon as={BsToggle2On} fontSize="30" />
         </HStack>
       ) : (
-        <Menu colorScheme="blackAlpha">
-          <MenuButton
-            as={IconButton}
-            aria-label="Options"
-            icon={<RiMenuLine />}
-            variant="unstyled"
-          />
-          <MenuList>
-            <MenuItem>New Tab</MenuItem>
-            <MenuItem>New Window</MenuItem>
-            <MenuItem>Open Closed Tab</MenuItem>
-            <MenuItem>Open File...</MenuItem>
-          </MenuList>
-        </Menu>
+        <>
+          <Menu>
+            <MenuButton
+              _hover={{
+                color: 'white',
+                bg: 'purple',
+              }}
+              as={IconButton}
+              aria-label="Options"
+              icon={<RiMenuLine size={30} />}
+              variant="outline"
+              border={'none'}
+            />
+            <MenuList bg={'gray.900'} color={'white'}>
+              <MenuItem>Skills</MenuItem>
+              <MenuItem>Contact</MenuItem>
+              <MenuItem>Projects</MenuItem>
+              <MenuItem>Blog</MenuItem>
+            </MenuList>
+          </Menu>
+        </>
       )}
     </Box>
   );
