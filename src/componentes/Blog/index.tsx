@@ -18,7 +18,7 @@ import { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { RiMenuLine } from 'react-icons/ri';
 import { Logo } from '../Header/Logo/Logo';
-import { SignInButton } from '../../componentes/SignInButton';
+import { SignInButton } from './SignInButton';
 import { IBlogPost, Post } from './post';
 
 export function Blog() {
