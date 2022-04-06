@@ -77,10 +77,18 @@ export function NavLink() {
                 border={'none'}
               />
               <MenuList bg={'gray.900'} color={'white'}>
-                <MenuItem>Skills</MenuItem>
-                <MenuItem>Contact</MenuItem>
-                <MenuItem>Projects</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem as={'a'} href="#skills">
+                  Skills
+                </MenuItem>
+                <MenuItem as={'a'} href="#contact">
+                  Contact
+                </MenuItem>
+                <MenuItem as={'a'} href="#projects">
+                  Projects
+                </MenuItem>
+                <MenuItem as={'a'} onClick={() => router.push('/blog')}>
+                  Blog
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
