@@ -1,5 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react';
-import CarouselSlide from '../CarouselSlide';
+import CarouselSlide from './CarouselSlide';
 import { Title } from '../Title';
 
 export function Projects() {

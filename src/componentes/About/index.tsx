@@ -9,7 +9,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
-import { Button as AboutButton } from '../..//componentes/Button';
+import { Button as AboutButton } from './Button';
 import { Modal } from './modal';
 
 export function About() {
