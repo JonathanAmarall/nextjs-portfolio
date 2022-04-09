@@ -75,7 +75,6 @@ export default function TextEditor({ ...rest }) {
       theme="snow"
       formats={formats}
       modules={modules}
-      onChange={(v) => console.log(v)}
     />
   );
 }
