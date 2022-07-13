@@ -8,8 +8,8 @@ interface ITextPreviewProps extends LinkProps {
 export function TextPreview({ preview, ...rest }: ITextPreviewProps) {
   const [hiddenText, setHiddenText] = useState<boolean>(true);
 
-  if (preview.length > 150) {
-    preview = `${preview.substring(0, 150)}...`;
+  if (preview?.length > 150) {
+    preview = `${preview?.substring(0, 150)}...`;
   }
 
   return (
@@ -26,7 +26,7 @@ export function TextPreview({ preview, ...rest }: ITextPreviewProps) {
         }}
         fontSize={'1rem'}
       >
-        {preview}
+        <div dangerouslySetInnerHTML={{ __html: `${preview}` }}></div>
         <Link
           {...rest}
           pl="1rem"

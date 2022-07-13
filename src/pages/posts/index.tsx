@@ -15,18 +15,8 @@ import {
   useBreakpointValue,
   Spinner,
   Link,
-  Modal,
-  ModalContent,
-  ModalCloseButton,
-  ModalBody,
   useDisclosure,
-  Input,
-  HStack,
-  VStack,
-  ModalFooter,
 } from '@chakra-ui/react';
-import dynamic from 'next/dynamic';
-import NextLink from 'next/link';
 import { useState } from 'react';
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 import { DashboardHeader } from '../../componentes/DashboardHeader';

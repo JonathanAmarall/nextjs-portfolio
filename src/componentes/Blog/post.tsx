@@ -5,10 +5,10 @@ export interface IBlogPost {
   id: string;
   shortDate: string;
   title: string;
-  preview: string;
+  text: string;
 }
 
-export function Post({ shortDate, title, preview, id }: IBlogPost) {
+export function Post({ shortDate, title, text, id }: IBlogPost) {
   return (
     <Box
       p={'15px 15px 15px 15px'}
@@ -31,7 +31,7 @@ export function Post({ shortDate, title, preview, id }: IBlogPost) {
           {title}
         </Link>
       </Text>
-      <TextPreview onClick={() => console.log('Show', id)} preview={preview} />
+      <TextPreview onClick={() => console.log('Show', id)} preview={text} />
     </Box>
   );
 }
